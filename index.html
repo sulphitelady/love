@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Love Message</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7); /* cute pink gradient */
+      background-attachment: fixed;
+    }
+
+    .message {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 30px 50px;
+      border-radius: 25px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      text-align: center;
+      font-size: 2rem;
+      color: #d63384;
+      position: relative;
+    }
+
+    .message::before, .message::after {
+      content: "❤";
+      font-size: 2.5rem;
+      position: absolute;
+      color: #ff4d6d;
+      animation: float 3s infinite ease-in-out;
+    }
+
+    .message::before {
+      left: -30px;
+      top: 20px;
+    }
+
+    .message::after {
+      right: -30px;
+      bottom: 20px;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="message">
+    mela bacha mela gudda 💕 i love you
+  </div>
+</body>
+</html>
